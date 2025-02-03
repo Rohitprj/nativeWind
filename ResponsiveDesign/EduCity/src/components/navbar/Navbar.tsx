@@ -1,14 +1,7 @@
 import { useEffect, useState } from "react";
 import logo from "../../assets/logo.png";
 import "./Navbar.css";
-import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-} from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -27,29 +20,27 @@ export const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="programes" smooth={true} offset={0} duration={500}>
+          <Link to="programes" smooth={true} offset={-220} duration={500}>
             Programe
           </Link>
         </li>
         <li>
-          <Link to="about" smooth={true} offset={0} duration={500}>
+          <Link to="about" smooth={true} offset={-150} duration={500}>
             About us
           </Link>
         </li>
         <li>
-          {" "}
-          <Link to="campus" smooth={true} offset={0} duration={500}>
+          <Link to="campus" smooth={true} offset={-190} duration={500}>
             Campus
           </Link>
         </li>
         <li>
-          {" "}
-          <Link to="testimonials" smooth={true} offset={0} duration={500}>
+          <Link to="testimonials" smooth={true} offset={-240} duration={500}>
             Testimonials
           </Link>
         </li>
         <li>
-          <Link to="contact" smooth={true} offset={0} duration={500}>
+          <Link to="contact" smooth={true} offset={-220} duration={500}>
             <button className="btn">Contact us</button>
           </Link>
         </li>
