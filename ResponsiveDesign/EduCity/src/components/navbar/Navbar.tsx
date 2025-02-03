@@ -40,9 +40,11 @@ export const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="contact" smooth={true} offset={-220} duration={500}>
-            <button className="btn">Contact us</button>
-          </Link>
+          <button className="btn">
+            <Link to="contact" smooth={true} offset={-220} duration={500}>
+              Contact us
+            </Link>
+          </button>
         </li>
       </ul>
     </nav>
